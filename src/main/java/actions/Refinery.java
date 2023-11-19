@@ -45,6 +45,7 @@ public class Refinery {
         inventory.removeIf(item -> item.name.equalsIgnoreCase(finalChoice));
         inventory.addAll(itemsToAdd);
         clearScreen();
+        System.out.printf("Refined all %s\n\n", choice.toUpperCase());
     }
 
 }

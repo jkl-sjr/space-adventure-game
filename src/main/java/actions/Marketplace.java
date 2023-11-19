@@ -24,10 +24,10 @@ public class Marketplace {
         tempShopItems.clear();
         shopItems.clear();
 
-
         System.out.println("Would you like to buy or sell items today?");
 
         String choice = scan.nextLine();
+        System.out.println();
 
         if (choice.equalsIgnoreCase("buy")) {
             buyItems();
@@ -43,8 +43,6 @@ public class Marketplace {
     }
 
     public static void buyItems() {
-        Item itemToBuy;
-
         genMarket();
         for (Item item : shopItems) {
             System.out.printf("%s: $%d\n", item.name, item.value);
@@ -52,11 +50,14 @@ public class Marketplace {
         System.out.println();
         System.out.println("What would you like to buy?");
         String choice = scan.nextLine();
+        System.out.println();
 
         for (Item item : shopItems) {
             if (item.name.equalsIgnoreCase(choice)) {
                 if (credits >= item.value) {
                     inventory.add(item);
+                    credits -= item.value;
+                    System.out.printf("Bought %s for %d credits\n\n", item.name, item.value);
                 } else {
                     System.out.println("You don't have enough credits to buy this item.");
                 }
@@ -68,6 +69,7 @@ public class Marketplace {
     public static void sellItems() {
         System.out.println("What would you like to sell?");
         String choice = scan.nextLine();
+        System.out.println();
 
         for (Item item : inventory) {
             if (item.name.equalsIgnoreCase(choice)){
@@ -76,6 +78,7 @@ public class Marketplace {
             }
         }
 
+        System.out.printf("Sold all %s\n\n", choice);
         inventory.removeAll(itemsToSell);
 
     }

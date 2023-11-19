@@ -57,11 +57,14 @@ public class Inventory {
 
             inventory.remove(itemToUse);
         } else if (choice.equalsIgnoreCase("no")) {
+            System.out.println();
             return;
         } else {
             System.out.println("That is not a valid option.");
             useInventoryItem();
         }
+
+        System.out.println();
     }
 
 }

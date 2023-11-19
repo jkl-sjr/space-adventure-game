@@ -3,6 +3,7 @@ package main.java;
 import java.util.Scanner;
 
 import static main.java.Game.clearScreen;
+import static main.java.Inventory.printInventory;
 import static main.java.planets.Earth.earth;
 import static main.java.planets.Jupiter.jupiter;
 import static main.java.planets.Mars.mars;
@@ -25,7 +26,15 @@ public class GameLoop {
             System.out.println(planet.number + ": " + planet);
         }
 
-        int choice = scan.nextInt();
+        String firstChoice = scan.nextLine();
+        int choice = 0;
+
+        if (firstChoice.equalsIgnoreCase("inventory")){
+            printInventory();
+            gameLoop();
+        } else {
+            choice = Integer.parseInt(firstChoice);
+        }
 
         Planets planetChoice = Planets.MERCURY;
 
