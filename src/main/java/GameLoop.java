@@ -2,7 +2,9 @@ package main.java;
 
 import java.util.Scanner;
 
+import static main.java.EvilDeathRobot.theInevitableMarchingOfTime;
 import static main.java.Game.clearScreen;
+import static main.java.Game.turnsToGo;
 import static main.java.Inventory.printInventory;
 import static main.java.planets.Earth.earth;
 import static main.java.planets.Jupiter.jupiter;
@@ -17,6 +19,15 @@ public class GameLoop {
 
     public static void gameLoop(){
         Scanner scan = new Scanner(System.in);
+
+        if (turnsToGo == 0) {
+            clearScreen();
+            System.out.println("You couldn't fend off the destruction in time.");
+            System.out.println("Game Over");
+            return;
+        }
+
+        System.out.printf("Turns Until Universal Destruction: %s turns\n\n", turnsToGo);
 
         System.out.println("Where do you wish to travel?");
         for (Planets planet : Planets.values()){
@@ -58,10 +69,12 @@ public class GameLoop {
                 break;
             case EARTH:
                 earth();
+                theInevitableMarchingOfTime();
                 gameLoop();
                 break;
             case MARS:
                 mars();
+                theInevitableMarchingOfTime();
                 gameLoop();
                 break;
             case JUPITER:
@@ -77,7 +90,5 @@ public class GameLoop {
                 neptune();
                 break;
         }
-
     }
-
 }

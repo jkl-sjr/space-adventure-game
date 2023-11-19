@@ -1,6 +1,7 @@
 package main.java;
 
 import main.java.items.Item;
+import main.java.items.uniques.RefractorDelay;
 import main.java.items.uniques.StrengthItem;
 import main.java.items.uniques.ScienceItem;
 
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static main.java.EvilDeathRobot.useRefractionDelay;
 import static main.java.Game.*;
 
 public class Inventory {
@@ -49,6 +51,8 @@ public class Inventory {
                         ((ScienceItem) item).useItem();
                     } else if (item instanceof StrengthItem) {
                         ((StrengthItem) item).useItem();
+                    } else if (item instanceof RefractorDelay) {
+                        useRefractionDelay();
                     }
                     itemToUse = item;
 

@@ -4,6 +4,7 @@ import main.java.items.uniques.ScienceItem;
 
 import java.util.Scanner;
 
+import static main.java.EvilDeathRobot.theInevitableMarchingOfTime;
 import static main.java.Game.clearScreen;
 import static main.java.Game.playerLocation;
 import static main.java.GameLoop.gameLoop;
@@ -48,6 +49,7 @@ public class Util {
                 actionChoice();
                 break;
         }
+        theInevitableMarchingOfTime();
         gameLoop();
     }
 

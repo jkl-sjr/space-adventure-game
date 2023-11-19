@@ -12,7 +12,6 @@ public class Earth {
 
         System.out.println("Welcome back home traveler");
         marketplace();
-
     }
 
 }

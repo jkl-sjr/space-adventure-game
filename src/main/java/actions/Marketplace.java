@@ -1,6 +1,7 @@
 package main.java.actions;
 
 import main.java.items.Item;
+import main.java.items.uniques.RefractorDelay;
 import main.java.items.uniques.ScienceItem;
 import main.java.items.uniques.StrengthItem;
 
@@ -39,7 +40,6 @@ public class Marketplace {
             System.out.println("That is not a valid option.");
             marketplace();
         }
-
     }
 
     public static void buyItems() {
@@ -80,7 +80,6 @@ public class Marketplace {
 
         System.out.printf("Sold all %s\n\n", choice);
         inventory.removeAll(itemsToSell);
-
     }
 
     private static void genMarket() {
@@ -99,6 +98,8 @@ public class Marketplace {
                 tempShopItems.add(new StrengthItem(strengthItemNames[randElem], itemValue, (float) (Math.random() / 4)));
             }
         }
+
+        shopItems.add(new RefractorDelay("Refractor Delay", 500));
         removeDuplicates();
     }
 
