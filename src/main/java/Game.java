@@ -9,8 +9,8 @@ import static main.java.GameLoop.gameLoop;
         3. Break game loop
             3.1 Implement Hard Break >/
             3.2 Implement End Sequence
-        4: Implement Mars
-            4.1: Implement Refinery
+        4: Implement Mars >/
+            4.1: Implement Refinery >/
         5: Implement Earth
             5.1: Implement Marketplace
 */

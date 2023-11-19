@@ -1,6 +1,6 @@
-package main.items.enums;
+package main.java.items.enums;
 
-public enum Metals {
+public enum UnrefinedMetals {
 
     ALUMINIUM_ORE(1,2),
     IRON_ORE(2,1),
@@ -10,7 +10,7 @@ public enum Metals {
     public final int number;
     public final int value;
 
-    Metals (int number, int value) {
+    UnrefinedMetals(int number, int value) {
         this.number = number;
         this.value = value;
     }

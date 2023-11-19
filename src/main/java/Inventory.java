@@ -1,6 +1,6 @@
 package main.java;
 
-import main.items.Item;
+import main.java.items.Item;
 
 import java.util.ArrayList;
 import java.util.List;

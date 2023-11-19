@@ -52,6 +52,7 @@ public class GameLoop {
                 break;
             case MARS:
                 mars();
+                gameLoop();
                 break;
             case JUPITER:
                 jupiter();

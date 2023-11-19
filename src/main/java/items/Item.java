@@ -1,4 +1,4 @@
-package main.items;
+package main.java.items;
 
 public class Item {
 
