@@ -49,6 +49,7 @@ public class GameLoop {
                 break;
             case EARTH:
                 earth();
+                gameLoop();
                 break;
             case MARS:
                 mars();

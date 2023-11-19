@@ -13,12 +13,14 @@ import static main.java.GameLoop.gameLoop;
             4.1: Implement Refinery >/
         5: Implement Earth
             5.1: Implement Marketplace
+                5.1.1 Implement Buy Items
+                5.1.2 Implement Sell Items >/
 */
 
 public class Game {
     // public static boolean isAlive = true;
     public static Planets playerLocation;
-    public static int credits; // to be implemented with marketplace
+    public static int credits;
     public static float playerStrength = 0.1f;
     public static float playerScience = 0.1f;
 
