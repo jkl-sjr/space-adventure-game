@@ -1,4 +1,4 @@
-package main.java;
+package main.java.actions;
 
 import main.items.enums.Metals;
 import main.items.Item;

@@ -5,8 +5,8 @@ import java.util.Scanner;
 import static main.java.Game.clearScreen;
 import static main.java.Game.playerLocation;
 import static main.java.GameLoop.gameLoop;
-import static main.java.GasSyphon.gasSyphon;
-import static main.java.Mine.mine;
+import static main.java.actions.GasSyphon.gasSyphon;
+import static main.java.actions.Mine.mine;
 
 public class Util {
 

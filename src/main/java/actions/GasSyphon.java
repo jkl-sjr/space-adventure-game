@@ -1,4 +1,4 @@
-package main.java;
+package main.java.actions;
 
 import main.items.Item;
 import main.items.enums.Gases;
