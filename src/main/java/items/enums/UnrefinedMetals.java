@@ -5,7 +5,8 @@ public enum UnrefinedMetals {
     ALUMINIUM_ORE(1,2),
     IRON_ORE(2,1),
     COBALT_ORE(3,3),
-    MAGNESIUM_ORE(4,2);
+    MAGNESIUM_ORE(4,2),
+    LEAD_ORE(5, 3);
 
     public final int number;
     public final int value;

@@ -1,10 +1,13 @@
 package main.java;
 
+import main.java.items.uniques.ScienceItem;
+
 import java.util.Scanner;
 
 import static main.java.Game.clearScreen;
 import static main.java.Game.playerLocation;
 import static main.java.GameLoop.gameLoop;
+import static main.java.Inventory.inventory;
 import static main.java.actions.GasSyphon.gasSyphon;
 import static main.java.actions.Mine.mine;
 
@@ -36,6 +39,9 @@ public class Util {
             case "inventory":
                 clearScreen();
                 Inventory.printInventory();
+                break;
+            case "add":
+                inventory.add(new ScienceItem("Goggles", 36, 1));
                 break;
             default:
                 System.out.println("Invalid Input.");

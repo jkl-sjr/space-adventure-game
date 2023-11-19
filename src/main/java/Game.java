@@ -2,21 +2,6 @@ package main.java;
 
 import static main.java.GameLoop.gameLoop;
 
-/*
-    TODO:
-        1: Implement Gas Syphon >/
-        2: Implement Game Looping >/
-        3. Break game loop
-            3.1 Implement Hard Break >/
-            3.2 Implement End Sequence
-        4: Implement Mars >/
-            4.1: Implement Refinery >/
-        5: Implement Earth
-            5.1: Implement Marketplace
-                5.1.1 Implement Buy Items
-                5.1.2 Implement Sell Items >/
-*/
-
 public class Game {
     // public static boolean isAlive = true;
     public static Planets playerLocation;

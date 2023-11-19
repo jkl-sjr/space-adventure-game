@@ -6,6 +6,7 @@ import main.java.items.Item;
 import main.java.items.enums.MetalIngots;
 import main.java.items.enums.UnrefinedMetals;
 
+import static main.java.Game.clearScreen;
 import static main.java.Inventory.inventory;
 
 public class Refinery {
@@ -43,6 +44,7 @@ public class Refinery {
         String finalChoice = choice;
         inventory.removeIf(item -> item.name.equalsIgnoreCase(finalChoice));
         inventory.addAll(itemsToAdd);
+        clearScreen();
     }
 
 }
