@@ -6,7 +6,8 @@ public enum MetalIngots {
     IRON(2, 50),
     COBALT(3, 50),
     MAGNESIUM(4, 50),
-    LEAD(5, 50);
+    LEAD(5, 50),
+    TIN(6, 50);
 
     public final int number;
     public final int value;

@@ -21,12 +21,8 @@ public class Mine {
             // Gets number from metal numbers
             int index = (int) (Math.random() * UnrefinedMetals.values().length);
 
-            // Loops through metals finding one with index
-            for (UnrefinedMetals number : UnrefinedMetals.values()) {
-                if (number.number == index) {
-                    metalsMined.add(number);
-                }
-            }
+            UnrefinedMetals metal = UnrefinedMetals.values()[(int) (Math.random() * UnrefinedMetals.values().length)];
+            metalsMined.add(metal);
         }
 
         // Adds metals to inventory
