@@ -8,6 +8,7 @@ The idea is that you are a Space Adventurer traveling through space trying to de
 
 ## How To Play:
 
+### Moving Between Planets
 To start play simply select a planet by using the number keys. \
 From there you have four options:
 1. Mine for Rare Metals
@@ -16,12 +17,19 @@ From there you have four options:
 
 You can open your inventory at any time when selecting an action or planet.
 
+### Mining & Refining Metals
 You will extract metals in their unrefined, low-value, ore form. 
 To increase the value of these metals, you can spend a turn refining a specific metal type on Mars. 
 
+### Syphoning Gases
+When you decide to syphon gases, you will extract high value gases at a lower rate. 
+This type of item does not need to be refined.
+
+### Destruction
 Each action you do uses a turn. 
 Once your ```turns until destruction``` hits 0, the game will end. 
 
+### Marketplace
 If you want to delay this destruction, you can visit the marketplace on Earth. 
 Here you can sell the items you've collected for credits.
 You can then spend those credits on various items. 
