@@ -21,12 +21,8 @@ public class GasSyphon {
             // Gets random number from gas numbers
             int index = (int) (Math.random() * Gases.values().length);
 
-            // Loops through gases finding one with index
-            for (Gases gas : Gases.values()) {
-                if (gas.number == index) {
-                    gasesSyphoned.add(gas);
-                }
-            }
+            Gases gas = Gases.values()[(int) (Math.random() * Gases.values().length)];
+            gasesSyphoned.add(gas);
         }
 
         // Adds gases to inventory
